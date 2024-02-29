@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# script that list sockets with options for TCP and 
+#+ UDP protocols, listening state, and showing process information.
+
+netstat -l --program
