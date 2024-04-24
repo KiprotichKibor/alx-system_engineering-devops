@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# A bash script that copies a file from localhost to your server
 
 # check if the correct number of arguments are provided
 if [ "$#" -lt 4 ]; then
