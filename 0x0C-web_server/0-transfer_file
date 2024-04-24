@@ -14,10 +14,3 @@ SSH_KEY=$4
 
 # Transfer file using scp with strcit host key checking disabled
 scp -o StrictHostKeyChecking=no -i "$SSH_KEY" "$FILE_PATH" "$USERNAME"@"$SERVER_IP":~/
-
-# Check if scp command was successful
-if [ $? -eq 0 ]; then
-	echo "File transfer successful."
-else
-	echo "File transfer failed."
-fi
