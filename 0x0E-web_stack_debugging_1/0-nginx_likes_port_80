@@ -4,4 +4,5 @@ sudo apt update
 sudo apt install nginx
 sudo service nginx start
 sudo nano /etc/nginx/nginx.conf
+new_block_content=$(sed -E 's/^(server {.+server_name)/\1\n\tlisten 80;', "$block_content")
 sudo service nginx restart
