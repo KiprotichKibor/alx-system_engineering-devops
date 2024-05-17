@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Installing nginx on my web server
-sudo apt update
-sudo apt install nginx
-sudo service nginx start
-sudo apt install curl
+# Ensuring nginx listens on port 80
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
