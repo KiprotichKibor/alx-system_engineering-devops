@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Accepts 1 argument and prints it out as user
+
+if [ "$#" -ne 1 ]; then
+	echo "Usage: $0 <username>"
+	exit 1
+fi
+
+USERNAME=$1
+
+sudo -u $USERNAME whoami
